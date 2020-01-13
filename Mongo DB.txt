@@ -1,0 +1,35 @@
+Это пример возможного использование Mongo DB  в проекте ростеха. 
+
+
+show dbs
+
+use chat bot
+
+db.createCollection('question')
+
+
+
+db.question.insert(
+  {
+    question: 'Как оформить командировку?',
+    respond: 'Интсрукции по оформдению командировки: C:\Users\Командировка'
+   
+    }
+);
+
+db.question.insert(
+  {
+   question:'Настройка почты',
+   respond: 'Интсрукции по настроейке почты: C:\Users\Почта'
+    )
+  }
+);
+
+db.question.insert(
+  {
+   question:'У меня не получилось настроить почту',
+   respond: 'Обратитесь в служюы подержки  телефон: 5999'
+    )
+  }
+);
+
